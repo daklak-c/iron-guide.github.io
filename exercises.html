@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Каталог вправ у тренажерному залі IronGuide: покрокова техніка, робочі м'язи, обладнання та зручні фільтри за категоріями." />
+  <title>Каталог вправ — IRON GUIDE</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="IronGuide — Головна">
+        <svg class="brand-logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="10" width="3" height="12" fill="currentColor"/>
+          <rect x="6" y="6" width="4" height="20" fill="currentColor"/>
+          <rect x="10" y="14" width="12" height="4" fill="currentColor"/>
+          <rect x="22" y="6" width="4" height="20" fill="currentColor"/>
+          <rect x="27" y="10" width="3" height="12" fill="currentColor"/>
+        </svg>
+        <span>IRON GUIDE</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Відкрити меню навігації" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle__bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav aria-label="Основна навігація">
+        <ul id="primary-navigation" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Головна</a></li>
+          <li><a href="exercises.html" class="nav-link active" aria-current="page">Вправи</a></li>
+          <li><a href="muscles.html" class="nav-link">Групи м'язів</a></li>
+          <li><a href="programs.html" class="nav-link">Програми</a></li>
+          <li><a href="glossary.html" class="nav-link">Словник</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">БІБЛІОТЕКА РУХІВ</span>
+        <h1>Каталог вправ</h1>
+        <p class="page-hero__desc">
+          Вибирайте цільову м’язову групу або шукайте вправу за назвою чи обладнанням. Натисніть на будь-яку картку, щоб відкрити покрокову інструкцію з техніки безпеки.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--no-border">
+      <div class="container">
+        <div class="controls-bar" role="region" aria-label="Фільтрація та пошук вправ">
+          <div class="controls-bar__top">
+            <div class="search-box">
+              <label for="exerciseSearch" class="search-box__label">Пошук за назвою, м'язом або обладнанням</label>
+              <div class="search-box__input-wrap">
+                <svg class="search-box__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input
+                  type="search"
+                  id="exerciseSearch"
+                  class="search-input"
+                  placeholder="Наприклад: штанга, спина, присідання..."
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <button type="button" class="btn btn--secondary btn--sm" data-reset-exercises>
+              Скинути фільтри
+            </button>
+          </div>
+
+          <div>
+            <span class="search-box__label">Категорія м'язів</span>
+            <div class="filter-group" role="group" aria-label="Фільтр за групою м'язів">
+              <button type="button" class="filter-btn is-active" data-category-filter="Усі" aria-pressed="true">Усі</button>
+              <button type="button" class="filter-btn" data-category-filter="Груди" aria-pressed="false">Груди</button>
+              <button type="button" class="filter-btn" data-category-filter="Спина" aria-pressed="false">Спина</button>
+              <button type="button" class="filter-btn" data-category-filter="Плечі" aria-pressed="false">Плечі</button>
+              <button type="button" class="filter-btn" data-category-filter="Руки" aria-pressed="false">Руки</button>
+              <button type="button" class="filter-btn" data-category-filter="Ноги" aria-pressed="false">Ноги</button>
+              <button type="button" class="filter-btn" data-category-filter="Прес" aria-pressed="false">Прес</button>
+            </div>
+          </div>
+        </div>
+        <div class="results-bar">
+          <p id="exerciseCount" aria-live="polite">Завантаження каталогу...</p>
+          <span>Натисніть на картку для перегляду техніки виконання</span>
+        </div>
+
+        <!-- Empty State -->
+        <div id="exerciseEmptyState" class="empty-state" hidden>
+          <h2 class="empty-state__title">За вашим запитом вправ не знайдено</h2>
+          <p class="empty-state__text">
+            Спробуйте змінити пошукове слово або оберіть іншу категорію м'язів, щоб побачити доступні вправи.
+          </p>
+          <button type="button" class="btn btn--primary" data-reset-exercises>Показати всі вправи</button>
+        </div>
+
+        <!-- Exercise Cards Grid -->
+        <div id="exercisesGrid" class="grid-3"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Accessible Exercise Detail Modal -->
+  <div id="exerciseModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <div class="card__meta" style="margin-bottom: 0.4rem;">
+            <span id="modalCategory" class="meta-tag">Груди</span>
+            <span id="modalType" class="meta-tag">Базова вправа</span>
+          </div>
+          <h2 id="modalTitle" class="h3">Назва вправи</h2>
+        </div>
+        <button type="button" class="modal-close" data-close-modal aria-label="Закрити вікно деталей">✕</button>
+      </div>
+      <div class="modal-media">
+        <div class="card__media-fallback">
+          <span>IRON GUIDE</span>
+          <span id="modalFallbackText">Техніка виконання</span>
+        </div>
+        <img id="modalImage" src="" alt="" data-fallback />
+      </div>
+      <div class="modal-body">
+        <div class="grid-2">
+          <div>
+            <div class="modal-section-title">Цільові м'язи</div>
+            <p id="modalMuscles"></p>
+          </div>
+          <div>
+            <div class="modal-section-title">Необхідне обладнання</div>
+            <p id="modalEquipment"></p>
+          </div>
+        </div>
+        <div>
+          <div class="modal-section-title">Опис руху</div>
+          <p id="modalDesc" style="color: var(--text-secondary);"></p>
+        </div>
+        <div>
+          <div class="modal-section-title">Техніка виконання покроково</div>
+          <ol id="modalSteps" class="technique-steps"></ol>
+        </div>
+        <div class="modal-tip-box">
+          <strong>Практична порада:</strong> <span id="modalTip"></span>
+        </div>
+        <div style="display: flex; justify-content: flex-end;">
+          <button type="button" class="btn btn--secondary btn--sm" data-close-modal>Закрити інструкцію</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo">
+            <svg class="brand-logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="10" width="3" height="12" fill="currentColor"/>
+              <rect x="6" y="6" width="4" height="20" fill="currentColor"/>
+              <rect x="10" y="14" width="12" height="4" fill="currentColor"/>
+              <rect x="22" y="6" width="4" height="20" fill="currentColor"/>
+              <rect x="27" y="10" width="3" height="12" fill="currentColor"/>
+            </svg>
+            <span>IRON GUIDE</span>
+          </a>
+          <p class="footer-desc">Знай свій зал. Розумій кожен рух. Освітній довідник про силові тренування, анатомію м’язів та принципи побудови програм.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Навігація</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="exercises.html">Вправи</a></li>
+            <li><a href="muscles.html">Групи м'язів</a></li>
+            <li><a href="programs.html">Програми</a></li>
+            <li><a href="glossary.html">Словник</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Категорії вправ</h3>
+          <ul class="footer-links">
+            <li><a href="exercises.html?category=Груди">Вправи на груди</a></li>
+            <li><a href="exercises.html?category=Спина">Вправи на спину</a></li>
+            <li><a href="exercises.html?category=Плечі">Вправи на плечі</a></li>
+            <li><a href="exercises.html?category=Ноги">Вправи на ноги</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 IronGuide. Інформаційний фітнес-довідник.</p>
+        <p>Матеріали сайту мають виключно ознайомчий та освітній характер і не є медичною консультацією. Перед початком тренувань проконсультуйтеся з фахівцем.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Повернутися на початок сторінки">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

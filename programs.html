@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Тренувальні програми IronGuide: детальний розбір сплітів Full Body, Upper/Lower та Push/Pull/Legs із прикладами тижневого розкладу." />
+  <title>Програми тренувань — IRON GUIDE</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="IronGuide — Головна">
+        <svg class="brand-logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="10" width="3" height="12" fill="currentColor"/>
+          <rect x="6" y="6" width="4" height="20" fill="currentColor"/>
+          <rect x="10" y="14" width="12" height="4" fill="currentColor"/>
+          <rect x="22" y="6" width="4" height="20" fill="currentColor"/>
+          <rect x="27" y="10" width="3" height="12" fill="currentColor"/>
+        </svg>
+        <span>IRON GUIDE</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Відкрити меню навігації" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle__bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav aria-label="Основна навігація">
+        <ul id="primary-navigation" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Головна</a></li>
+          <li><a href="exercises.html" class="nav-link">Вправи</a></li>
+          <li><a href="muscles.html" class="nav-link">Групи м'язів</a></li>
+          <li><a href="programs.html" class="nav-link active" aria-current="page">Програми</a></li>
+          <li><a href="glossary.html" class="nav-link">Словник</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">СТРУКТУРА ТРЕНУВАНЬ</span>
+        <h1>Тренувальні програми та спліти</h1>
+        <p class="page-hero__desc">
+          Тренувальний спліт — це спосіб розподілу навантаження на м’язові групи протягом тижня. Порівняйте три найпоширеніші схеми тренувань та оберіть ту, що відповідає вашому графіку і досвіду.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="modal-tip-box" style="margin-bottom: 2rem;">
+          <strong>Освітнє зауваження:</strong> Наведені нижче програми є навчальними прикладами структурування тренувального тижня. Кількість підходів, вибір вправ і робоча вага мають адаптуватися до вашого рівня підготовки, самопочуття та індивідуальних особливостей.
+        </div>
+
+        <!-- Interactive Program Selector Tabs -->
+        <div class="program-tabs" role="tablist" aria-label="Вибір програми тренувань">
+          <button
+            type="button"
+            class="program-tab is-active"
+            role="tab"
+            id="tab-fullbody"
+            aria-selected="true"
+            aria-controls="panel-fullbody"
+            tabindex="0"
+            data-program-tab="fullbody"
+          >
+            <span class="program-tab__tag">3 тренування на тиждень</span>
+            <span class="program-tab__title">Full Body (Усе тіло)</span>
+          </button>
+
+          <button
+            type="button"
+            class="program-tab"
+            role="tab"
+            id="tab-upperlower"
+            aria-selected="false"
+            aria-controls="panel-upperlower"
+            tabindex="-1"
+            data-program-tab="upperlower"
+          >
+            <span class="program-tab__tag">4 тренування на тиждень</span>
+            <span class="program-tab__title">Upper / Lower (Верх / Низ)</span>
+          </button>
+
+          <button
+            type="button"
+            class="program-tab"
+            role="tab"
+            id="tab-ppl"
+            aria-selected="false"
+            aria-controls="panel-ppl"
+            tabindex="-1"
+            data-program-tab="ppl"
+          >
+            <span class="program-tab__tag">3–6 тренувань на тиждень</span>
+            <span class="program-tab__title">Push / Pull / Legs</span>
+          </button>
+        </div>
+        <!-- Panel 1: Full Body -->
+        <div
+          id="panel-fullbody"
+          class="program-panel is-active"
+          role="tabpanel"
+          aria-labelledby="tab-fullbody"
+          data-program-panel="fullbody"
+        >
+          <div class="program-panel__header">
+            <span class="eyebrow">ПРОГРАМА 01 // БАЗОВА ЧАСТОТА</span>
+            <h2>Full Body — Тренування всього тіла за одну сесію</h2>
+            <p style="color: var(--text-secondary); margin-top: 0.65rem; max-width: 72ch;">
+              Схема, у якій на кожному тренуванні виконується по одній базовій вправі для всіх основних м’язових груп (ноги, груди, спина, плечі та кор) із днем повноцінного відпочинку між заняттями.
+            </p>
+          </div>
+
+          <div class="program-panel__content">
+            <div class="grid-2">
+              <div>
+                <div class="info-block__label">Кому найкраще підходить</div>
+                <p class="info-block__text">Початківцям, людям із насиченим робочим графіком (2–3 візити в зал на тиждень), а також досвідченим атлетам, які цінують високу частоту стимуляції м’язів без надмірного обсягу за одне заняття.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Логіка розподілу навантаження</div>
+                <p class="info-block__text">Замість того щоб виконувати 4–5 вправ на груди в один день, ви робите 1–2 вправи тричі на тиждень зі свіжою нервовою системою та якісною технікою.</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="info-block__label" style="margin-bottom: 0.85rem;">Приклад тижневого розкладу (3 дні)</div>
+              <div class="schedule-grid">
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">Понеділок</span>
+                  <span class="schedule-day__focus">Full Body А</span>
+                  <span class="schedule-day__note">Присідання, жим лежачи, тяга блока</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Вівторок</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Відновлення, легка ходьба</span>
+                </div>
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">Середа</span>
+                  <span class="schedule-day__focus">Full Body Б</span>
+                  <span class="schedule-day__note">Румунська тяга, жим сидячи, тяга гантелі</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Четвер</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Відновлення, сон</span>
+                </div>
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">П'ятниця</span>
+                  <span class="schedule-day__focus">Full Body В</span>
+                  <span class="schedule-day__note">Жим ногами, жим на похилій, підтягування</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Субота</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Активний відпочинок</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Неділя</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Повне відновлення</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-3">
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Переваги</div>
+                <ul class="bullet-list">
+                  <li>Кожна група м’язів отримує стимул 3 рази на тиждень</li>
+                  <li>Швидке закріплення правильної техніки базових рухів</li>
+                  <li>Пропуск одного заняття не руйнує тижневий баланс</li>
+                </ul>
+              </div>
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Обмеження</div>
+                <ul class="bullet-list">
+                  <li>Сесія може тривати 60–75 хвилин через декілька великих груп</li>
+                  <li>Менше часу на дрібну ізоляцію (передпліччя, литки, задня дельта)</li>
+                  <li>Вимагає обов’язкового дня відпочинку між тренуваннями</li>
+                </ul>
+              </div>
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Приклад сесії Full Body А</div>
+                <ul class="bullet-list">
+                  <li>Присідання зі штангою — 3 × 6–8</li>
+                  <li>Жим штанги лежачи — 3 × 8–10</li>
+                  <li>Горизонтальна тяга блока — 3 × 10–12</li>
+                  <li>Махи гантелями в сторони — 3 × 12–15</li>
+                  <li>Планка — 3 підходи по 40 с</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Panel 2: Upper / Lower -->
+        <div
+          id="panel-upperlower"
+          class="program-panel"
+          role="tabpanel"
+          aria-labelledby="tab-upperlower"
+          data-program-panel="upperlower"
+          hidden
+        >
+          <div class="program-panel__header">
+            <span class="eyebrow">ПРОГРАМА 02 // ОПТИМАЛЬНИЙ БАЛАНС</span>
+            <h2>Upper / Lower — Поділ на верхню та нижню частини тіла</h2>
+            <p style="color: var(--text-secondary); margin-top: 0.65rem; max-width: 72ch;">
+              Чотириденний спліт, у якому дві сесії на тиждень присвячені м’язам верху тіла (груди, спина, плечі, руки), а ще дві — м’язам ніг і кора.
+            </p>
+          </div>
+
+          <div class="program-panel__content">
+            <div class="grid-2">
+              <div>
+                <div class="info-block__label">Кому найкраще підходить</div>
+                <p class="info-block__text">Атлетам із початковим та середнім досвідом, які можуть стабільно виділяти 4 дні на тиждень і прагнуть поєднати достатній тренувальний обсяг із повноцінним відновленням кожної групи двічі на тиждень.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Логіка розподілу навантаження</div>
+                <p class="info-block__text">Поки верхня частина тіла відновлюється після жимів і тяг, наступного дня ви тренуєте ноги, не навантажуючи плечовий пояс.</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="info-block__label" style="margin-bottom: 0.85rem;">Приклад тижневого розкладу (4 дні)</div>
+              <div class="schedule-grid">
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">Понеділок</span>
+                  <span class="schedule-day__focus">Верх А</span>
+                  <span class="schedule-day__note">Акцент: горизонтальні жими й тяги</span>
+                </div>
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">Вівторок</span>
+                  <span class="schedule-day__focus">Низ А</span>
+                  <span class="schedule-day__note">Акцент: квадрицепси та прес</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Середа</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Відновлення ЦНС</span>
+                </div>
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">Четвер</span>
+                  <span class="schedule-day__focus">Верх Б</span>
+                  <span class="schedule-day__note">Акцент: вертикальні тяги й плечі</span>
+                </div>
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">П'ятниця</span>
+                  <span class="schedule-day__focus">Низ Б</span>
+                  <span class="schedule-day__note">Акцент: задня поверхня стегна</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Субота</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Прогулянка, мобільність</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Неділя</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Повне відновлення</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-3">
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Переваги</div>
+                <ul class="bullet-list">
+                  <li>Оптимальна частота опрацювання м’язів — 2 рази на тиждень</li>
+                  <li>Достатньо місця і для базових, і для ізоляційних вправ</li>
+                  <li>Три вільні дні на тиждень для якісного відновлення</li>
+                </ul>
+              </div>
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Обмеження</div>
+                <ul class="bullet-list">
+                  <li>Дні верху об’єднують груди, спину, плечі та руки в одній сесії</li>
+                  <li>Потребує регулярних 4 візитів до залу щотижня</li>
+                </ul>
+              </div>
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Приклад сесії Верх А / Низ А</div>
+                <ul class="bullet-list">
+                  <li>Верх А: Жим штанги лежачи, тяга блока сидячи, жим гантелей сидячи, підйом на біцепс</li>
+                  <li>Низ А: Присідання зі штангою, румунська тяга, розгинання ніг, скручування на блоці</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Panel 3: Push / Pull / Legs -->
+        <div
+          id="panel-ppl"
+          class="program-panel"
+          role="tabpanel"
+          aria-labelledby="tab-ppl"
+          data-program-panel="ppl"
+          hidden
+        >
+          <div class="program-panel__header">
+            <span class="eyebrow">ПРОГРАМА 03 // БІОМЕХАНІЧНИЙ СПЛІТ</span>
+            <h2>Push / Pull / Legs — Жимові, тягові та тренування ніг</h2>
+            <p style="color: var(--text-secondary); margin-top: 0.65rem; max-width: 72ch;">
+              Логічний поділ тренувань за типом руху: у день Push працюють усі жимові м’язи (груди, плечі, трицепс), у день Pull — тягові (спина, задня дельта, біцепс), а в день Legs — уся нижня частина тіла.
+            </p>
+          </div>
+
+          <div class="program-panel__content">
+            <div class="grid-2">
+              <div>
+                <div class="info-block__label">Кому найкраще підходить</div>
+                <p class="info-block__text">Атлетам середнього та просунутого рівня, які практикують 3, 4 або 5–6 тренувань на тиждень і хочуть уникнути перетину втомлених м’язів-синергістів між сусідніми днями.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Логіка розподілу навантаження</div>
+                <p class="info-block__text">Оскільки під час жиму лежачи неминуче працюють передні дельти й трицепси, об’єднання їх в один день дозволяє дати їм повний спокій у дні спини та ніг.</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="info-block__label" style="margin-bottom: 0.85rem;">Приклад тижневого розкладу (класичний 3- або 6-денний цикл)</div>
+              <div class="schedule-grid">
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">Понеділок</span>
+                  <span class="schedule-day__focus">Push (Жим)</span>
+                  <span class="schedule-day__note">Груди, передня/середня дельта, трицепс</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Вівторок</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Або Pull при 6-денній схемі</span>
+                </div>
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">Середа</span>
+                  <span class="schedule-day__focus">Pull (Тяга)</span>
+                  <span class="schedule-day__note">Спина, задня дельта, біцепс</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Четвер</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Відновлення</span>
+                </div>
+                <div class="schedule-day schedule-day--active">
+                  <span class="schedule-day__name">П'ятниця</span>
+                  <span class="schedule-day__focus">Legs (Ноги)</span>
+                  <span class="schedule-day__note">Квадрицепс, біцепс стегна, сідниці, прес</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Субота</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Або початок нового циклу</span>
+                </div>
+                <div class="schedule-day">
+                  <span class="schedule-day__name">Неділя</span>
+                  <span class="schedule-day__focus">Відпочинок</span>
+                  <span class="schedule-day__note">Повне відновлення</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-3">
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Переваги</div>
+                <ul class="bullet-list">
+                  <li>Відсутність конфлікту відновлення між суміжними м’язами</li>
+                  <li>Гнучкість: можна виконувати 3, 4 або 6 разів на тиждень</li>
+                  <li>Достатньо часу для детального опрацювання кожної зони</li>
+                </ul>
+              </div>
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Обмеження</div>
+                <ul class="bullet-list">
+                  <li>При 3 тренуваннях на тиждень кожна група працює лише раз на 7 днів</li>
+                  <li>6-денний варіант вимагає високої дисципліни сну та харчування</li>
+                </ul>
+              </div>
+              <div class="exercise-tags-box">
+                <div class="info-block__label">Приклад вправ за днями</div>
+                <ul class="bullet-list">
+                  <li>Push: Жим лежачи, жим гантелей на похилій, махи в сторони, розгинання на блоці</li>
+                  <li>Pull: Тяга верхнього блока, горизонтальна тяга, тяга гантелі, підйом на біцепс</li>
+                  <li>Legs: Присідання, румунська тяга, розгинання ніг, планка</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Expandable FAQ Section -->
+    <section class="section section--secondary section--no-border">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">ЧАСТІ ЗАПИТАННЯ</span>
+          <h2>Як обрати та адаптувати програму</h2>
+          <p class="section-header__lead">
+            Відповіді на типові запитання про вибір спліту, кількість підходів та відпочинок між тренуваннями.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item is-open">
+            <button type="button" class="faq-trigger" aria-expanded="true">
+              <span>Яку програму обрати, якщо я тільки починаю тренуватися в залі?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              Для перших 3–6 місяців занять оптимальним вибором зазвичай є <strong>Full Body</strong> тричі на тиждень. Вона дозволяє виконувати базові рухи частіше з помірним обсягом на кожній сесії, що прискорює освоєння техніки та координації без надмірного м’язового виснаження.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Скільки хвилин відпочивати між робочими підходами?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              У важких базових багатосуглобових вправах (присідання, жим лежачи, румунська тяга, тяги блоків) рекомендований інтервал відпочинку становить <strong>2–3 хвилини</strong>. В ізоляційних рухах на менші м’язові групи (махи на плечі, згинання на біцепс, прес) достатньо <strong>60–90 секунд</strong>.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Коли варто збільшувати робочу вагу у вправах?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              Використовуйте принцип подвійної прогресії: якщо у програмі вказано діапазон 3 підходи по 8–10 повторень, оберіть вагу, з якою ви технічно чисто виконуєте 8 разів. Коли з часом ви зможете виконати всі 3 підходи по 10 повторень із запасом 1–2 повторення і без порушення техніки, на наступному тренуванні додайте мінімальний крок ваги (1,25–2,5 кг).
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span>Чи обов’язково міняти вправи кожного тижня, щоб «здивувати м’язи»?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-content">
+              Ні. Постійна хаотична зміна вправ заважає відстежувати прогресивне навантаження та закріплювати нейром’язовий зв’язок. Основний кістяк програми варто зберігати незмінним щонайменше 8–12 тижнів, змінюючи рухи лише у разі дискомфорту в суглобах або тривалого плато.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo">
+            <svg class="brand-logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="10" width="3" height="12" fill="currentColor"/>
+              <rect x="6" y="6" width="4" height="20" fill="currentColor"/>
+              <rect x="10" y="14" width="12" height="4" fill="currentColor"/>
+              <rect x="22" y="6" width="4" height="20" fill="currentColor"/>
+              <rect x="27" y="10" width="3" height="12" fill="currentColor"/>
+            </svg>
+            <span>IRON GUIDE</span>
+          </a>
+          <p class="footer-desc">Знай свій зал. Розумій кожен рух. Освітній довідник про силові тренування, анатомію м’язів та принципи побудови програм.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Навігація</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="exercises.html">Вправи</a></li>
+            <li><a href="muscles.html">Групи м'язів</a></li>
+            <li><a href="programs.html">Програми</a></li>
+            <li><a href="glossary.html">Словник</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Тренувальні спліти</h3>
+          <ul class="footer-links">
+            <li><a href="programs.html?program=fullbody">Full Body (3 дні)</a></li>
+            <li><a href="programs.html?program=upperlower">Upper / Lower (4 дні)</a></li>
+            <li><a href="programs.html?program=ppl">Push / Pull / Legs</a></li>
+            <li><a href="glossary.html">Словник термінів</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 IronGuide. Інформаційний фітнес-довідник.</p>
+        <p>Матеріали сайту мають виключно ознайомчий та освітній характер і не є медичною консультацією. Перед початком тренувань проконсультуйтеся з фахівцем.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Повернутися на початок сторінки">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Гід із основних м'язових груп IronGuide: анатомічні функції, значення у тренуваннях, базові вправи та практичні рекомендації." />
+  <title>Групи м'язів — IRON GUIDE</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="IronGuide — Головна">
+        <svg class="brand-logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="10" width="3" height="12" fill="currentColor"/>
+          <rect x="6" y="6" width="4" height="20" fill="currentColor"/>
+          <rect x="10" y="14" width="12" height="4" fill="currentColor"/>
+          <rect x="22" y="6" width="4" height="20" fill="currentColor"/>
+          <rect x="27" y="10" width="3" height="12" fill="currentColor"/>
+        </svg>
+        <span>IRON GUIDE</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Відкрити меню навігації" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="menu-toggle__bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+
+      <nav aria-label="Основна навігація">
+        <ul id="primary-navigation" class="nav-menu">
+          <li><a href="index.html" class="nav-link">Головна</a></li>
+          <li><a href="exercises.html" class="nav-link">Вправи</a></li>
+          <li><a href="muscles.html" class="nav-link active" aria-current="page">Групи м'язів</a></li>
+          <li><a href="programs.html" class="nav-link">Програми</a></li>
+          <li><a href="glossary.html" class="nav-link">Словник</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">ФУНКЦІОНАЛЬНА АНАТОМІЯ</span>
+        <h1>Основні групи м'язів</h1>
+        <p class="page-hero__desc">
+          Розуміння того, як саме кріпляться і скорочуються м’язи, перетворює механічне піднімання ваги на свідоме тренування. Оберіть м’язову групу нижче для переходу до її розбору.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--no-border">
+      <div class="container">
+        <!-- Interactive Muscle Group Selector -->
+        <div class="anatomy-nav" role="region" aria-label="Швидкий вибір м'язової групи">
+          <span class="eyebrow" style="margin-bottom: 0.25rem;">ІНТЕРАКТИВНИЙ НАВІГАТОР АНАТОМІЇ</span>
+          <p style="color: var(--text-secondary); font-size: 0.92rem;">Натисніть на м’язову групу, щоб перейти до її функцій, базових вправ та практичних рекомендацій:</p>
+          <div class="anatomy-nav__grid">
+            <button type="button" class="anatomy-pill" data-muscle-target="muscle-chest">
+              <span class="anatomy-pill__index">01 // ПЕРЕДНЯ ЛІНІЯ</span>
+              <span class="anatomy-pill__name">Груди</span>
+              <span class="anatomy-pill__sub">Жимові рухи вперед</span>
+            </button>
+            <button type="button" class="anatomy-pill" data-muscle-target="muscle-back">
+              <span class="anatomy-pill__index">02 // ЗАДНЯ ЛІНІЯ</span>
+              <span class="anatomy-pill__name">Спина</span>
+              <span class="anatomy-pill__sub">Вертикальні й горизонтальні тяги</span>
+            </button>
+            <button type="button" class="anatomy-pill" data-muscle-target="muscle-shoulders">
+              <span class="anatomy-pill__index">03 // ПЛЕЧОВИЙ ПОЯС</span>
+              <span class="anatomy-pill__name">Плечі</span>
+              <span class="anatomy-pill__sub">Три пучки дельтоподібного м'яза</span>
+            </button>
+            <button type="button" class="anatomy-pill" data-muscle-target="muscle-arms">
+              <span class="anatomy-pill__index">04 // ВЕРХНІ КІНЦІВКИ</span>
+              <span class="anatomy-pill__name">Біцепс і трицепс</span>
+              <span class="anatomy-pill__sub">Згинання та розгинання ліктя</span>
+            </button>
+            <button type="button" class="anatomy-pill" data-muscle-target="muscle-legs">
+              <span class="anatomy-pill__index">05 // НИЖНЯ ЧАСТИНА ТІЛА</span>
+              <span class="anatomy-pill__name">Ноги</span>
+              <span class="anatomy-pill__sub">Квадрицепс, біцепс стегна, сідниці</span>
+            </button>
+            <button type="button" class="anatomy-pill" data-muscle-target="muscle-abs">
+              <span class="anatomy-pill__index">06 // ЦЕНТР СТАБІЛЬНОСТІ</span>
+              <span class="anatomy-pill__name">Прес</span>
+              <span class="anatomy-pill__sub">Стабілізація таза і хребта</span>
+            </button>
+          </div>
+        </div>
+        <!-- Section 1: Груди -->
+        <article id="muscle-chest" class="muscle-section">
+          <div class="muscle-section__header">
+            <div>
+              <span class="eyebrow">01 // ВЕРХНЯ ЧАСТИНА ТІЛА</span>
+              <h2>Груди (Великий та малий грудні м'язи)</h2>
+            </div>
+            <a href="exercises.html?category=Груди" class="btn btn--secondary btn--sm">Вправи на груди →</a>
+          </div>
+          <div class="muscle-section__body">
+            <div class="info-list">
+              <div>
+                <div class="info-block__label">Основна анатомічна функція</div>
+                <p class="info-block__text">Великий грудний м’яз складається з ключичної (верхньої), грудинно-реберної (середньої) та черевної (нижньої) частин. Його головне завдання — приведення плечової кістки до середини корпусу (горизонтальне зведення рук перед собою) та її внутрішня ротація.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Чому важливо тренувати</div>
+                <p class="info-block__text">Розвинені грудні м’язи формують базову силу жимових і поштовхових рухів, підтримують стабільність плечового суглоба та у поєднанні з м’язами спини забезпечують збалансовану біомеханіку верхньої частини тулуба.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Практичні рекомендації</div>
+                <p class="info-block__text">Поєднуйте горизонтальні жими з жимами під нахилом 25–35° для рівномірного розвитку всієї площі грудного м’яза. Під час жимів завжди зводьте та опускайте лопатки вниз до лави — це захищає плечові суглоби і передає навантаження саме на груди.</p>
+              </div>
+            </div>
+            <div class="exercise-tags-box">
+              <div class="info-block__label">Базові та популярні вправи</div>
+              <ul class="bullet-list">
+                <li>Жим штанги лежачи на горизонтальній лаві</li>
+                <li>Жим гантелей на похилій лаві (кут 30°)</li>
+                <li>Віджимання від підлоги або на брусах</li>
+                <li>Зведення рук у кросовері або тренажері «Батерфляй»</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Section 2: Спина -->
+        <article id="muscle-back" class="muscle-section">
+          <div class="muscle-section__header">
+            <div>
+              <span class="eyebrow">02 // ЗАДНІЙ ЛАНЦЮГ ВЕРХУ</span>
+              <h2>Спина (Найширші, трапецієподібні, ромбоподібні м'язи та розгиначі)</h2>
+            </div>
+            <a href="exercises.html?category=Спина" class="btn btn--secondary btn--sm">Вправи на спину →</a>
+          </div>
+          <div class="muscle-section__body">
+            <div class="info-list">
+              <div>
+                <div class="info-block__label">Основна анатомічна функція</div>
+                <p class="info-block__text">М’язи спини утворюють складний багатошаровий комплекс. Найширші м’язи тягнуть підняту руку вниз і назад; ромбоподібні та середня трапеція зводять лопатки до хребта; м’язи-розгиначі хребта утримують вертикальне положення тулуба.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Чому важливо тренувати</div>
+                <p class="info-block__text">Сильна спина є головним фундаментом здорової постави, особливо при сидячому способі життя. Вона протидіє сутулості, стабілізує хребет під час присідань і тяг та врівноважує силу грудних м’язів.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Практичні рекомендації</div>
+                <p class="info-block__text">Для повного розвитку спини включайте у програму обидва вектори руху: вертикальні тяги (підтягування, тяга верхнього блока) для ширини спини та горизонтальні тяги (тяга блока сидячи, тяга гантелі в нахилі) для товщини середини спини.</p>
+              </div>
+            </div>
+            <div class="exercise-tags-box">
+              <div class="info-block__label">Базові та популярні вправи</div>
+              <ul class="bullet-list">
+                <li>Тяга верхнього блока широким хватом до грудей</li>
+                <li>Горизонтальна тяга нижнього блока сидячи</li>
+                <li>Тяга гантелі однією рукою в нахилі</li>
+                <li>Підтягування на перекладині різним хватом</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <!-- Section 3: Плечі -->
+        <article id="muscle-shoulders" class="muscle-section">
+          <div class="muscle-section__header">
+            <div>
+              <span class="eyebrow">03 // ТРИ ПУЧКИ ДЕЛЬТ</span>
+              <h2>Плечі (Передній, середній та задній пучки дельтоподібного м'яза)</h2>
+            </div>
+            <a href="exercises.html?category=Плечі" class="btn btn--secondary btn--sm">Вправи на плечі →</a>
+          </div>
+          <div class="muscle-section__body">
+            <div class="info-list">
+              <div>
+                <div class="info-block__label">Основна анатомічна функція</div>
+                <p class="info-block__text">Дельтоподібний м’яз оточує плечовий суглоб із трьох боків: передній пучок піднімає руку вперед, середній відводить руку вбік через сторону, а задній відводить плече назад і назовні.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Чому важливо тренувати</div>
+                <p class="info-block__text">Плечовий суглоб є найрухливішим у тілі людини, тому його стабільність напряму залежить від збалансованого розвитку всіх трьох пучків дельт і м’язів обертальної манжети плеча.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Практичні рекомендації</div>
+                <p class="info-block__text">Передній пучок отримує значне навантаження під час усіх жимів на груди, тому окрему увагу варто приділяти середньому та задньому пучкам за допомогою контрольованих махів із помірною вагою.</p>
+              </div>
+            </div>
+            <div class="exercise-tags-box">
+              <div class="info-block__label">Базові та популярні вправи</div>
+              <ul class="bullet-list">
+                <li>Жим гантелей сидячи або армійський жим стоячи</li>
+                <li>Махи гантелями в сторони (відведення рук)</li>
+                <li>Розведення гантелей у нахилі на задню дельту</li>
+                <li>Тяга каната до обличчя (Face Pull)</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Section 4: Біцепс і трицепс -->
+        <article id="muscle-arms" class="muscle-section">
+          <div class="muscle-section__header">
+            <div>
+              <span class="eyebrow">04 // М'ЯЗИ-АНТАГОНІСТИ РУК</span>
+              <h2>Біцепс і трицепс (Двоголовий та триголовий м'язи плеча)</h2>
+            </div>
+            <a href="exercises.html?category=Руки" class="btn btn--secondary btn--sm">Вправи на руки →</a>
+          </div>
+          <div class="muscle-section__body">
+            <div class="info-list">
+              <div>
+                <div class="info-block__label">Основна анатомічна функція</div>
+                <p class="info-block__text">Біцепс (двоголовий м’яз) згинає руку в ліктьовому суглобі та розвертає кисть долонею вгору (супінація). Трицепс (триголовий м’яз) виконує протилежну функцію — повністю розгинає передпліччя і становить близько 60% м’язового об’єму плеча.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Чому важливо тренувати</div>
+                <p class="info-block__text">М’язи рук передають зусилля у всіх важких жимах і тягах. Слабкий трицепс обмежує результат у жимі лежачи, а недостатня сила згиначів передпліччя заважає повноцінно допрацьовувати вправи на спину.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Практичні рекомендації</div>
+                <p class="info-block__text">Виконуйте ізоляційні вправи на руки наприкінці тренування після базових жимів і тяг. Фіксуйте лікті нерухомо вздовж тулуба, щоб навантаження не переходило на передні дельти чи поперек.</p>
+              </div>
+            </div>
+            <div class="exercise-tags-box">
+              <div class="info-block__label">Базові та популярні вправи</div>
+              <ul class="bullet-list">
+                <li>Підйом прямої або EZ-штанги на біцепс стоячи</li>
+                <li>Підйом гантелей хватом «Молотки»</li>
+                <li>Розгинання рук на верхньому блоці з канатом</li>
+                <li>Французький жим або віджимання на брусах</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <!-- Section 5: Ноги -->
+        <article id="muscle-legs" class="muscle-section">
+          <div class="muscle-section__header">
+            <div>
+              <span class="eyebrow">05 // ОСНОВА СИЛИ ТА РУХУ</span>
+              <h2>Ноги (Квадрицепси, біцепси стегна, сідничні м'язи та литки)</h2>
+            </div>
+            <a href="exercises.html?category=Ноги" class="btn btn--secondary btn--sm">Вправи на ноги →</a>
+          </div>
+          <div class="muscle-section__body">
+            <div class="info-list">
+              <div>
+                <div class="info-block__label">Основна анатомічна функція</div>
+                <p class="info-block__text">Квадрицепс (передня поверхня стегна) розгинає ногу в коліні; задня поверхня стегна та великі сідничні м’язи розгинають таз і згинають коліно; литковий та камбалоподібний м’язи відповідають за згинання стопи.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Чому важливо тренувати</div>
+                <p class="info-block__text">М’язи нижньої частини тіла становлять понад половину загальної м’язової маси людини. Їх тренування розвиває функціональну силу, підтримує здоров’я колінних і кульшових суглобів та формує міцну опору для всього тіла.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Практичні рекомендації</div>
+                <p class="info-block__text">Не обмежуйтеся лише жимами чи розгинаннями на квадрицепс — обов’язково додавайте тазово-домінантні рухи (румунську тягу, згинання ніг) для гармонійного розвитку задньої поверхні стегна.</p>
+              </div>
+            </div>
+            <div class="exercise-tags-box">
+              <div class="info-block__label">Базові та популярні вправи</div>
+              <ul class="bullet-list">
+                <li>Присідання зі штангою або гантелями</li>
+                <li>Румунська тяга зі штангою або гантелями</li>
+                <li>Розгинання та згинання ніг у тренажері</li>
+                <li>Жим ногами у платформі та випади</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Section 6: Прес -->
+        <article id="muscle-abs" class="muscle-section">
+          <div class="muscle-section__header">
+            <div>
+              <span class="eyebrow">06 // ЦЕНТР КОРПУСУ</span>
+              <h2>Прес і м'язи кора (Прямий, косі та поперечний м'язи живота)</h2>
+            </div>
+            <a href="exercises.html?category=Прес" class="btn btn--secondary btn--sm">Вправи на прес →</a>
+          </div>
+          <div class="muscle-section__body">
+            <div class="info-list">
+              <div>
+                <div class="info-block__label">Основна анатомічна функція</div>
+                <p class="info-block__text">Прямий м’яз живота згинає хребет (наближає грудну клітку до таза), косі м’язи відповідають за повороти й бічні нахили корпусу, а глибокий поперечний м’яз створює внутрішньочеревний тиск і фіксує поперек.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Чому важливо тренувати</div>
+                <p class="info-block__text">Сильний кор — це «міст», який передає зусилля між ногами та верхньою частиною тіла. Без стабільного преса неможливо безпечно виконувати базові присідання, тяги чи жими стоячи.</p>
+              </div>
+              <div>
+                <div class="info-block__label">Практичні рекомендації</div>
+                <p class="info-block__text">Тренуйте прес у двох режимах: динамічному скручуванні хребта (скручування на блоці, підйоми ніг) та антиротаційній стабілізації (планка, утримання ваги).</p>
+              </div>
+            </div>
+            <div class="exercise-tags-box">
+              <div class="info-block__label">Базові та популярні вправи</div>
+              <ul class="bullet-list">
+                <li>Скручування на верхньому блоці з канатом</li>
+                <li>Планка з опорою на передпліччя</li>
+                <li>Підйом колін або прямих ніг у висі</li>
+                <li>Скручування на лаві з контролем попереку</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo">
+            <svg class="brand-logo__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="10" width="3" height="12" fill="currentColor"/>
+              <rect x="6" y="6" width="4" height="20" fill="currentColor"/>
+              <rect x="10" y="14" width="12" height="4" fill="currentColor"/>
+              <rect x="22" y="6" width="4" height="20" fill="currentColor"/>
+              <rect x="27" y="10" width="3" height="12" fill="currentColor"/>
+            </svg>
+            <span>IRON GUIDE</span>
+          </a>
+          <p class="footer-desc">Знай свій зал. Розумій кожен рух. Освітній довідник про силові тренування, анатомію м’язів та принципи побудови програм.</p>
+        </div>
+        <div>
+          <h3 class="footer-heading">Навігація</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="exercises.html">Вправи</a></li>
+            <li><a href="muscles.html">Групи м'язів</a></li>
+            <li><a href="programs.html">Програми</a></li>
+            <li><a href="glossary.html">Словник</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-heading">Групи м'язів</h3>
+          <ul class="footer-links">
+            <li><a href="#muscle-chest">Груди та плечі</a></li>
+            <li><a href="#muscle-back">Спина та біцепс</a></li>
+            <li><a href="#muscle-legs">Ноги та сідниці</a></li>
+            <li><a href="#muscle-abs">Прес і м'язи кора</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 IronGuide. Інформаційний фітнес-довідник.</p>
+        <p>Матеріали сайту мають виключно ознайомчий та освітній характер і не є медичною консультацією. Перед початком тренувань проконсультуйтеся з фахівцем.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Повернутися на початок сторінки">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
