@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#161719"/>
+  <line x1="30" y1="200" x2="370" y2="200" stroke="#353535" stroke-width="2"/>
+  <!-- Bench & Rack -->
+  <line x1="115" y1="75" x2="115" y2="200" stroke="#525256" stroke-width="4"/>
+  <rect x="95" y="148" width="145" height="8" rx="2" fill="#4A4A4E"/>
+  <line x1="130" y1="156" x2="130" y2="200" stroke="#4A4A4E" stroke-width="4"/>
+  <line x1="220" y1="156" x2="220" y2="200" stroke="#4A4A4E" stroke-width="4"/>
+  <!-- Athlete lying on flat bench -->
+  <circle cx="118" cy="134" r="11" fill="#D4D4D8"/>
+  <path d="M132 138 H222" stroke="#D4D4D8" stroke-width="14" stroke-linecap="round"/>
+  <!-- Highlighted Chest -->
+  <path d="M142 132 Q158 124 172 133" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <!-- Legs & Feet on floor -->
+  <path d="M222 140 L262 145 L268 198" stroke="#A3A3A3" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="262" y1="198" x2="282" y2="198" stroke="#D4D4D8" stroke-width="6" stroke-linecap="round"/>
+  <!-- Arms pressing barbell -->
+  <path d="M150 135 L142 110 L150 78" stroke="#F5F5F5" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Barbell & Plates -->
+  <line x1="112" y1="78" x2="188" y2="78" stroke="#FFFFFF" stroke-width="4"/>
+  <rect x="142" y="60" width="6" height="36" rx="1" fill="#FFFFFF"/>
+  <rect x="151" y="64" width="5" height="28" rx="1" fill="#A3A3A3"/>
+  <!-- Movement Arrow -->
+  <path d="M178 118 V82 M173 88 L178 80 L183 88" stroke="#A3A3A3" stroke-width="2" stroke-dasharray="3 3"/>
+</svg>

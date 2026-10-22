@@ -12,7 +12,8 @@ const EXERCISES_DATA = [
     muscles: 'Великий грудний м’яз, передня дельта, трицепс',
     equipment: 'Штанга, горизонтальна лава',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/barbell-bench-press.svg',
+    alt: 'Жим штанги лежачи на горизонтальній лаві',
     shortDesc: 'Фундаментальна базова вправа для розвитку сили та маси грудних м’язів, плечового пояса і трицепсів.',
     fullDesc: 'Жим штанги лежачи на горизонтальній лаві дозволяє залучити великий масив м’язів верхньої частини тіла. Стабільне положення лопаток та ніг допомагає безпечно передавати зусилля і контролювати траєкторію грифа.',
     steps: [
@@ -31,7 +32,8 @@ const EXERCISES_DATA = [
     muscles: 'Верхній відділ грудних м’язів, передня дельта, трицепс',
     equipment: 'Гантелі, лава з нахилом 30°',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/incline-dumbbell-press.svg',
+    alt: 'Жим гантелей на похилій лаві під кутом 30 градусів',
     shortDesc: 'Ефективний рух для акцентованого опрацювання ключичної (верхньої) частини грудних м’язів із повною амплітудою.',
     fullDesc: 'Використання гантелей на похилій лаві дозволяє кожній руці працювати незалежно, вирівнюючи м’язовий дисбаланс та забезпечуючи глибше розтягнення волокон у нижній точці.',
     steps: [
@@ -50,7 +52,8 @@ const EXERCISES_DATA = [
     muscles: 'Грудний м’яз, трицепс, передня дельта, м’язи кора',
     equipment: 'Власна вага',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1598971639058-fab3c3109a00?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/push-ups.svg',
+    alt: 'Віджимання від підлоги з прямою лінією корпусу',
     shortDesc: 'Класична вправа з власною вагою, що розвиває грудні м’язи, трицепси та стабільність корпусу.',
     fullDesc: 'Віджимання від підлоги навчають утримувати жорстку лінію тіла в русі та чудово підходять як для розминки, так і для основного тренування.',
     steps: [
@@ -68,7 +71,8 @@ const EXERCISES_DATA = [
     muscles: 'Найширші м’язи спини, великий круглий м’яз, біцепс',
     equipment: 'Блоковий тренажер, широке руків’я',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/lat-pulldown.svg',
+    alt: 'Тяга верхнього блока широким хватом до грудей сидячи',
     shortDesc: 'Вертикальна тяга для цілеспрямованого розвитку найширших м’язів спини та формування V-подібного силуету.',
     fullDesc: 'Тяга верхнього блока до грудей дозволяє точно дозувати робочу вагу та відпрацювати правильне опускання плечового пояса перед переходом до підтягувань.',
     steps: [
@@ -87,7 +91,8 @@ const EXERCISES_DATA = [
     muscles: 'Середина спини, ромбоподібні, трапецієподібні та найширші м’язи',
     equipment: 'Нижній блоковий тренажер, V-подібне руків’я',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/seated-cable-row.svg',
+    alt: 'Горизонтальна тяга нижнього блока сидячи з упором стоп',
     shortDesc: 'Базова горизонтальна тяга для зміцнення середини спини, покращення постави та розвитку товщини м’язів.',
     fullDesc: 'Вправа поєднує роботу найширших м’язів із активним зведенням лопаток, що робить її незамінною для збалансованого розвитку спини.',
     steps: [
@@ -106,7 +111,8 @@ const EXERCISES_DATA = [
     muscles: 'Найширший м’яз спини, ромбоподібні м’язи, задня дельта, біцепс',
     equipment: 'Гантель, горизонтальна лава',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/one-arm-dumbbell-row.svg',
+    alt: 'Тяга гантелі однією рукою в нахилі з опорою на лаву',
     shortDesc: 'Одностороння тяга в нахилі, що дозволяє пропрацювати кожну половину спини з максимальною амплітудою.',
     fullDesc: 'Опора вільною рукою на лаву знімає зайве навантаження з попереку і дозволяє зосередитися виключно на роботі найширшого м’яза спини.',
     steps: [
@@ -125,7 +131,8 @@ const EXERCISES_DATA = [
     muscles: 'Передня та середня дельти, трицепс, верх трапеції',
     equipment: 'Гантелі, лава з вертикальною спинкою',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/seated-dumbbell-shoulder-press.svg',
+    alt: 'Жим гантелей вгору сидячи на лаві з вертикальною спинкою',
     shortDesc: 'Основна жимова вправа для розвитку сили та об’єму дельтоподібних м’язів зі стабільною опорою спини.',
     fullDesc: 'Виконання жиму сидячи з опорою на спинку лави мінімізує допомогу ніг і допомагає прицільно навантажити плечовий пояс.',
     steps: [
@@ -143,7 +150,8 @@ const EXERCISES_DATA = [
     muscles: 'Середній пучок дельтоподібного м’яза',
     equipment: 'Гантелі',
     type: 'Ізоляційна вправа',
-    image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/lateral-raises.svg',
+    alt: 'Махи гантелями в сторони стоячи для середньої дельти',
     shortDesc: 'Ключова ізоляційна вправа для середньої дельти, що візуально розширює лінію плечей.',
     fullDesc: 'Середній пучок дельти слабо залучається у важких жимах, тому махи через сторони є обов’язковим елементом для пропорційного розвитку плечей.',
     steps: [
@@ -161,7 +169,8 @@ const EXERCISES_DATA = [
     muscles: 'Двоголовий м’яз плеча (біцепс), плечовий м’яз, передпліччя',
     equipment: 'Прямий або EZ-гриф',
     type: 'Ізоляційна вправа',
-    image: 'https://images.unsplash.com/photo-1581009137042-c552e485697a?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/barbell-bicep-curl.svg',
+    alt: 'Підйом штанги на біцепс стоячи з фіксованими ліктями',
     shortDesc: 'Класична вправа для цілеспрямованого розвитку сили та об’єму згиначів передпліччя.',
     fullDesc: 'Підйом штанги стоячи дозволяє працювати з відчутною вагою. Використання вигнутого EZ-грифа зменшує навантаження на зап’ястя.',
     steps: [
@@ -180,7 +189,8 @@ const EXERCISES_DATA = [
     muscles: 'Триголовий м’яз плеча (трицепс — бічна та медіальна головки)',
     equipment: 'Верхній блок, канатне або пряме руків’я',
     type: 'Ізоляційна вправа',
-    image: 'https://images.unsplash.com/photo-1530822847156-5df684ec5ee1?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/tricep-rope-pushdown.svg',
+    alt: 'Розгинання рук на верхньому блоці з канатним руків’ям для трицепса',
     shortDesc: 'Ізоляційна вправа на верхньому блоці для детального опрацювання всіх головок трицепса.',
     fullDesc: 'Трицепс становить більшу частину об’єму плеча. Розгинання на блоці забезпечують постійний натяг троса вздовж усієї амплітуди руху.',
     steps: [
@@ -198,7 +208,8 @@ const EXERCISES_DATA = [
     muscles: 'Квадрицепси, великі сідничні м’язи, привідні м’язи, м’язи кора',
     equipment: 'Штанга, силові стійки або рама',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/barbell-squat.svg',
+    alt: 'Присідання зі штангою на плечах до паралелі стегон із підлогою',
     shortDesc: 'Головна базова вправа для розвитку сили та м’язової маси нижньої частини тіла і стабілізаторів кора.',
     fullDesc: 'Присідання зі штангою на спині залучають найбільші м’язові групи людського тіла, розвиваючи загальну силу, координацію та щільність кісткової тканини.',
     steps: [
@@ -217,7 +228,8 @@ const EXERCISES_DATA = [
     muscles: 'Чотириголовий м’яз стегна (квадрицепс)',
     equipment: 'Тренажер для розгинання ніг',
     type: 'Ізоляційна вправа',
-    image: 'https://images.unsplash.com/photo-1434682881908-b43d0467b798?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/leg-extension.svg',
+    alt: 'Розгинання ніг сидячи у спеціалізованому тренажері для квадрицепсів',
     shortDesc: 'Прицільна ізоляційна вправа для опрацювання всіх чотирьох головок квадрицепса без осьового навантаження на хребет.',
     fullDesc: 'Тренажер для розгинання ніг ідеально підходить для завершення тренування ніг або попереднього стомлення квадрицепсів перед базовими рухами.',
     steps: [
@@ -236,7 +248,8 @@ const EXERCISES_DATA = [
     muscles: 'Задня поверхня стегна (біцепс стегна), сідничні м’язи, розгиначі спини',
     equipment: 'Штанга або гантелі',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/romanian-deadlift.svg',
+    alt: 'Румунська тяга зі штангою з відведенням таза назад',
     shortDesc: 'Базовий тазово-домінантний рух для зміцнення задньої поверхні стегна, сідниць та м’язів попереку.',
     fullDesc: 'На відміну від класичної станової тяги, румунська тяга виконується з мінімальним згинанням колін, що фокусує навантаження на розтягненні та скороченні біцепса стегна і сідниць.',
     steps: [
@@ -255,7 +268,8 @@ const EXERCISES_DATA = [
     muscles: 'Прямий м’яз живота, косі м’язи живота',
     equipment: 'Верхній блок, канатне руків’я',
     type: 'Ізоляційна вправа',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/cable-crunch.svg',
+    alt: 'Скручування корпусу на колінах біля верхнього блока з канатом',
     shortDesc: 'Ефективна вправа для тренування прямого м’яза живота з можливістю плавної прогресії робочої ваги.',
     fullDesc: 'Як і будь-який інший м’яз, прес реагує на прогресивне навантаження. Блоковий тренажер дозволяє додати контрольований опір без надмірної кількості повторень.',
     steps: [
@@ -273,7 +287,8 @@ const EXERCISES_DATA = [
     muscles: 'Поперечний і прямий м’язи живота, сідниці, стабілізатори хребта',
     equipment: 'Власна вага, килимок',
     type: 'Базова вправа',
-    image: 'https://images.unsplash.com/photo-1566241440091-ec10de8db2e1?auto=format&fit=crop&w=900&q=80',
+    image: 'assets/images/exercises/plank-hold.svg',
+    alt: 'Утримання прямої лінії тіла в планці з опорою на передпліччя',
     shortDesc: 'Ізометрична вправа для зміцнення глибоких м’язів кора та формування навички стабілізації хребта.',
     fullDesc: 'Сильний кор необхідний для безпечного виконання присідань, тяг та жимів. Планка вчить протидіяти прогину в попереку під навантаженням.',
     steps: [
@@ -490,7 +505,7 @@ function openExerciseModal(exerciseId) {
   if (imageEl) {
     imageEl.style.display = 'block';
     imageEl.src = exercise.image;
-    imageEl.alt = exercise.name;
+    imageEl.alt = exercise.alt || exercise.name;
   }
 
   if (musclesEl) musclesEl.textContent = exercise.muscles;
@@ -627,28 +642,20 @@ function initExerciseCatalog() {
     grid.innerHTML = filtered
       .map(
         (ex) => `
-      <article class="card card--interactive" tabindex="0" role="button" aria-label="Детальніше про вправу ${escapeHtml(ex.name)}" data-exercise-card="${escapeHtml(ex.id)}">
+      <article class="card card--interactive card--exercise" tabindex="0" role="button" aria-label="Детальніше про вправу ${escapeHtml(ex.name)}" data-exercise-card="${escapeHtml(ex.id)}">
         <div class="card__media">
           <span class="card__badge">${escapeHtml(ex.category)}</span>
           <div class="card__media-fallback">
-            <span>IRON GUIDE</span>
             <span>${escapeHtml(ex.category)}</span>
           </div>
-          <img src="${escapeHtml(ex.image)}" alt="${escapeHtml(ex.name)}" loading="lazy" data-fallback />
+          <img src="${escapeHtml(ex.image)}" alt="${escapeHtml(ex.alt || ex.name)}" loading="lazy" data-fallback />
         </div>
         <div class="card__body">
-          <div class="card__meta">
-            <span class="meta-tag">${escapeHtml(ex.type)}</span>
-            <span class="meta-tag">${escapeHtml(ex.equipment)}</span>
-          </div>
           <h2 class="card__title">${escapeHtml(ex.name)}</h2>
-          <p class="card__desc">${escapeHtml(ex.shortDesc)}</p>
-          <div class="card__meta">
-            <span><strong>М'язи:</strong> ${escapeHtml(ex.muscles)}</span>
-          </div>
+          <p class="card__sub">${escapeHtml(ex.muscles)}</p>
           <div class="card__footer">
-            <span>Техніка виконання</span>
-            <span aria-hidden="true">→</span>
+            <span class="card__equip">${escapeHtml(ex.equipment)}</span>
+            <span class="card__action" aria-hidden="true">Деталі →</span>
           </div>
         </div>
       </article>

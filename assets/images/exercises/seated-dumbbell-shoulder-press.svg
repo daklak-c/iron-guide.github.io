@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#161719"/>
+  <line x1="30" y1="205" x2="370" y2="205" stroke="#353535" stroke-width="2"/>
+  <!-- Upright Bench (Front View of Seated Overhead Press) -->
+  <rect x="182" y="95" width="36" height="72" rx="3" fill="#2A2B30" stroke="#4A4A4E" stroke-width="2"/>
+  <rect x="172" y="167" width="56" height="8" rx="2" fill="#4A4A4E"/>
+  <line x1="200" y1="175" x2="200" y2="205" stroke="#4A4A4E" stroke-width="5"/>
+  <!-- Athlete Seated Front View -->
+  <circle cx="200" cy="92" r="11" fill="#D4D4D8"/>
+  <rect x="180" y="108" width="40" height="56" rx="6" fill="#D4D4D8"/>
+  <!-- Deltoid Highlights -->
+  <circle cx="176" cy="114" r="7" fill="#FFFFFF"/>
+  <circle cx="224" cy="114" r="7" fill="#FFFFFF"/>
+  <!-- Arms pressing dumbbells overhead -->
+  <path d="M174 114 L148 104 L152 66" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M226 114 L252 104 L248 66" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Left & Right Dumbbells -->
+  <line x1="136" y1="64" x2="168" y2="64" stroke="#FFFFFF" stroke-width="4"/>
+  <rect x="135" y="56" width="6" height="16" rx="1" fill="#FFFFFF"/>
+  <rect x="163" y="56" width="6" height="16" rx="1" fill="#FFFFFF"/>
+  <line x1="232" y1="64" x2="264" y2="64" stroke="#FFFFFF" stroke-width="4"/>
+  <rect x="231" y="56" width="6" height="16" rx="1" fill="#FFFFFF"/>
+  <rect x="259" y="56" width="6" height="16" rx="1" fill="#FFFFFF"/>
+  <!-- Upward Arrows -->
+  <path d="M122 98 V62 M117 68 L122 60 L127 68" stroke="#A3A3A3" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M278 98 V62 M273 68 L278 60 L283 68" stroke="#A3A3A3" stroke-width="2" stroke-dasharray="3 3"/>
+</svg>

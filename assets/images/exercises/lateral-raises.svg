@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#161719"/>
+  <line x1="30" y1="208" x2="370" y2="208" stroke="#353535" stroke-width="2"/>
+  <!-- Standing Athlete (Front View) -->
+  <circle cx="200" cy="68" r="11" fill="#D4D4D8"/>
+  <rect x="182" y="84" width="36" height="58" rx="6" fill="#D4D4D8"/>
+  <line x1="190" y1="142" x2="186" y2="206" stroke="#A3A3A3" stroke-width="9" stroke-linecap="round"/>
+  <line x1="210" y1="142" x2="214" y2="206" stroke="#A3A3A3" stroke-width="9" stroke-linecap="round"/>
+  <!-- Lateral Deltoid Highlights -->
+  <circle cx="176" cy="92" r="7" fill="#FFFFFF"/>
+  <circle cx="224" cy="92" r="7" fill="#FFFFFF"/>
+  <!-- Arms raised out to sides -->
+  <path d="M174 92 L140 94 L112 98" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M226 92 L260 94 L288 98" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Dumbbells in hands -->
+  <rect x="98" y="90" width="18" height="16" rx="2" fill="#FFFFFF"/>
+  <rect x="284" y="90" width="18" height="16" rx="2" fill="#FFFFFF"/>
+  <!-- Lateral Arc Arrows -->
+  <path d="M148 148 Q122 132 114 110" stroke="#A3A3A3" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M252 148 Q278 132 286 110" stroke="#A3A3A3" stroke-width="2" stroke-dasharray="3 3"/>
+</svg>

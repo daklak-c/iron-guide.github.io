@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#161719"/>
+  <line x1="30" y1="204" x2="370" y2="204" stroke="#353535" stroke-width="2"/>
+  <!-- Leg Extension Machine Frame & Backrest -->
+  <path d="M148 92 L160 152 H214" stroke="#4A4A4E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="175" y1="156" x2="165" y2="204" stroke="#4A4A4E" stroke-width="5"/>
+  <line x1="208" y1="156" x2="215" y2="204" stroke="#4A4A4E" stroke-width="5"/>
+  <!-- Seated Athlete -->
+  <circle cx="164" cy="76" r="11" fill="#D4D4D8"/>
+  <line x1="166" y1="92" x2="174" y2="144" stroke="#D4D4D8" stroke-width="13" stroke-linecap="round"/>
+  <!-- Highlighted Quadriceps -->
+  <line x1="174" y1="144" x2="226" y2="144" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <!-- Extended Lower Leg & Ankle Roller Pad -->
+  <line x1="226" y1="144" x2="282" y2="128" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="274" cy="138" r="8" fill="#FFFFFF"/>
+  <line x1="226" y1="146" x2="274" y2="138" stroke="#737373" stroke-width="3"/>
+  <!-- Extension Arc Arrow -->
+  <path d="M242 188 Q276 172 288 140" stroke="#A3A3A3" stroke-width="2" stroke-dasharray="3 3"/>
+  <path d="M282 145 L289 138 L292 147" stroke="#A3A3A3" stroke-width="2"/>
+</svg>

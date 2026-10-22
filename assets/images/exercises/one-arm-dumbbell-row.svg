@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#161719"/>
+  <line x1="30" y1="200" x2="370" y2="200" stroke="#353535" stroke-width="2"/>
+  <!-- Flat Bench -->
+  <rect x="115" y="152" width="145" height="8" rx="2" fill="#4A4A4E"/>
+  <line x1="135" y1="160" x2="135" y2="200" stroke="#4A4A4E" stroke-width="4"/>
+  <line x1="240" y1="160" x2="240" y2="200" stroke="#4A4A4E" stroke-width="4"/>
+  <!-- Athlete hinged with hand & knee on bench -->
+  <circle cx="132" cy="100" r="10" fill="#D4D4D8"/>
+  <path d="M145 104 L224 114" stroke="#D4D4D8" stroke-width="13" stroke-linecap="round"/>
+  <!-- Lat Highlight -->
+  <path d="M166 104 L212 110" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <!-- Support Arm on bench -->
+  <line x1="148" y1="108" x2="144" y2="152" stroke="#A3A3A3" stroke-width="7" stroke-linecap="round"/>
+  <!-- Support Leg & Floor Leg -->
+  <path d="M224 114 L215 150 L245 150" stroke="#A3A3A3" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="224" y1="114" x2="262" y2="198" stroke="#A3A3A3" stroke-width="9" stroke-linecap="round"/>
+  <!-- Working Arm rowing dumbbell to hip -->
+  <path d="M162 108 L184 92 L188 128" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Dumbbell -->
+  <line x1="174" y1="132" x2="202" y2="132" stroke="#FFFFFF" stroke-width="4"/>
+  <rect x="172" y="124" width="6" height="16" rx="1" fill="#FFFFFF"/>
+  <rect x="198" y="124" width="6" height="16" rx="1" fill="#FFFFFF"/>
+  <!-- Row Arc Arrow -->
+  <path d="M188 168 Q202 146 196 122" stroke="#A3A3A3" stroke-width="2" stroke-dasharray="3 3"/>
+</svg>

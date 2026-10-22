@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none">
+  <rect width="400" height="240" fill="#161719"/>
+  <line x1="30" y1="204" x2="370" y2="204" stroke="#353535" stroke-width="2"/>
+  <!-- Squat Rack Upright -->
+  <line x1="140" y1="36" x2="140" y2="204" stroke="#4A4A4E" stroke-width="5"/>
+  <line x1="140" y1="82" x2="152" y2="82" stroke="#737373" stroke-width="4"/>
+  <!-- Athlete in Squat Position (Side View) -->
+  <circle cx="192" cy="76" r="11" fill="#D4D4D8"/>
+  <!-- Torso & Core -->
+  <line x1="196" y1="92" x2="232" y2="142" stroke="#D4D4D8" stroke-width="14" stroke-linecap="round"/>
+  <!-- Quad & Glute Highlight (Parallel Thigh) -->
+  <line x1="232" y1="142" x2="182" y2="148" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <!-- Lower Leg & Foot -->
+  <line x1="182" y1="148" x2="198" y2="202" stroke="#D4D4D8" stroke-width="10" stroke-linecap="round"/>
+  <line x1="186" y1="202" x2="212" y2="202" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+  <!-- Barbell on Upper Back -->
+  <circle cx="202" cy="92" r="16" fill="#2A2B30" stroke="#FFFFFF" stroke-width="4"/>
+  <circle cx="202" cy="92" r="5" fill="#FFFFFF"/>
+  <!-- Vertical Squat Trajectory Arrow -->
+  <path d="M258 84 V142 M253 90 L258 82 L263 90 M253 136 L258 144 L263 136" stroke="#A3A3A3" stroke-width="2" stroke-dasharray="3 3"/>
+</svg>

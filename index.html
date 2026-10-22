@@ -49,51 +49,18 @@
   </header>
 
   <main id="main-content">
-    <!-- Hero Section -->
+    <!-- Compact Hero Section -->
     <section class="hero">
-      <div class="container hero__grid">
+      <div class="container">
         <div class="hero__content">
-          <span class="eyebrow eyebrow--pill">ТРЕНУЙСЯ РОЗУМНІШЕ</span>
+          <span class="eyebrow">ТРЕНУЙСЯ РОЗУМНІШЕ</span>
           <h1>Знай свій зал. Розумій кожен рух.</h1>
           <p class="hero__lead">
-            IronGuide допомагає зрозуміти силові вправи, роботу м’язових груп і принципи побудови тренувань. Чітка біомеханіка, перевірена база та зрозуміла структура без зайвого шуму.
+            Практичний довідник із техніки силових вправ, анатомії м’язових груп і базових тренувальних програм.
           </p>
           <div class="hero__actions">
             <a href="exercises.html" class="btn btn--primary">Переглянути вправи</a>
             <a href="muscles.html" class="btn btn--secondary">Групи м'язів</a>
-          </div>
-
-          <div class="hero__metrics" aria-label="Ключові розділи посібника">
-            <div class="metric-item">
-              <div class="metric-item__value">13+</div>
-              <div class="metric-item__label">Ключових вправ</div>
-            </div>
-            <div class="metric-item">
-              <div class="metric-item__value">6</div>
-              <div class="metric-item__label">М'язових груп</div>
-            </div>
-            <div class="metric-item">
-              <div class="metric-item__value">3</div>
-              <div class="metric-item__label">Базові спліти</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__visual">
-          <div class="hero__image-wrap">
-            <div class="card__media-fallback">
-              <span>IRON GUIDE EDITORIAL</span>
-              <span>СИЛОВА БІОМЕХАНІКА</span>
-            </div>
-            <img
-              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=80"
-              alt="Заняття зі штангою у сучасному тренажерному залі"
-              data-fallback
-            />
-          </div>
-          <div class="hero__image-caption">
-            <span>ФОКУС: ТЕХНІКА ТА КОНТРОЛЬ</span>
-            <span>ВИПУСК 01 // БАЗА ЗАЛУ</span>
           </div>
         </div>
       </div>
@@ -106,66 +73,74 @@
             <span class="eyebrow">ОСНОВА ТРЕНУВАНЬ</span>
             <h2>Ключові базові вправи</h2>
             <p class="section-header__lead">
-              Чотири фундаментальні рухи, з яких починається розуміння роботи з вільною вагою та блоками. Натисніть на картку, щоб відкрити покрокову техніку.
+              Чотири фундаментальні рухи зі штангою, гантелями та блоками. Натисніть на картку для перегляду техніки.
             </p>
           </div>
           <a href="exercises.html" class="link-arrow">Усі вправи в каталозі <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="grid-4">
-          <article class="card card--interactive" tabindex="0" role="button" data-open-exercise="barbell-bench-press" aria-label="Детальніше: Жим штанги лежачи">
+          <article class="card card--interactive card--exercise" tabindex="0" role="button" data-open-exercise="barbell-bench-press" aria-label="Детальніше: Жим штанги лежачи">
             <div class="card__media">
               <span class="card__badge">Груди</span>
               <div class="card__media-fallback"><span>Груди</span></div>
-              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80" alt="Жим штанги лежачи" loading="lazy" data-fallback />
+              <img src="assets/images/exercises/barbell-bench-press.svg" alt="Жим штанги лежачи на горизонтальній лаві" loading="lazy" data-fallback />
             </div>
             <div class="card__body">
-              <div class="card__meta"><span class="meta-tag">Штанга</span><span class="meta-tag">Базова</span></div>
               <h3 class="card__title">Жим штанги лежачи</h3>
-              <p class="card__desc">Горизонтальний жим для комплексного розвитку великого грудного м’яза, передньої дельти та трицепса.</p>
-              <div class="card__footer"><span>Переглянути техніку</span><span aria-hidden="true">→</span></div>
+              <p class="card__sub">Великий грудний м’яз, передня дельта, трицепс</p>
+              <div class="card__footer">
+                <span class="card__equip">Штанга, лава</span>
+                <span class="card__action" aria-hidden="true">Деталі →</span>
+              </div>
             </div>
           </article>
 
-          <article class="card card--interactive" tabindex="0" role="button" data-open-exercise="lat-pulldown" aria-label="Детальніше: Тяга верхнього блока">
+          <article class="card card--interactive card--exercise" tabindex="0" role="button" data-open-exercise="lat-pulldown" aria-label="Детальніше: Тяга верхнього блока">
             <div class="card__media">
               <span class="card__badge">Спина</span>
               <div class="card__media-fallback"><span>Спина</span></div>
-              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=700&q=80" alt="Тяга верхнього блока" loading="lazy" data-fallback />
+              <img src="assets/images/exercises/lat-pulldown.svg" alt="Тяга верхнього блока широким хватом до грудей сидячи" loading="lazy" data-fallback />
             </div>
             <div class="card__body">
-              <div class="card__meta"><span class="meta-tag">Блоковий тренажер</span><span class="meta-tag">Базова</span></div>
               <h3 class="card__title">Тяга верхнього блока</h3>
-              <p class="card__desc">Вертикальна тяга для контрольованого опрацювання найширших м’язів спини та стабілізації лопаток.</p>
-              <div class="card__footer"><span>Переглянути техніку</span><span aria-hidden="true">→</span></div>
+              <p class="card__sub">Найширші м’язи спини, круглий м’яз, біцепс</p>
+              <div class="card__footer">
+                <span class="card__equip">Блоковий тренажер</span>
+                <span class="card__action" aria-hidden="true">Деталі →</span>
+              </div>
             </div>
           </article>
 
-          <article class="card card--interactive" tabindex="0" role="button" data-open-exercise="seated-dumbbell-shoulder-press" aria-label="Детальніше: Жим гантелей сидячи">
+          <article class="card card--interactive card--exercise" tabindex="0" role="button" data-open-exercise="seated-dumbbell-shoulder-press" aria-label="Детальніше: Жим гантелей сидячи">
             <div class="card__media">
               <span class="card__badge">Плечі</span>
               <div class="card__media-fallback"><span>Плечі</span></div>
-              <img src="https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?auto=format&fit=crop&w=700&q=80" alt="Жим гантелей сидячи" loading="lazy" data-fallback />
+              <img src="assets/images/exercises/seated-dumbbell-shoulder-press.svg" alt="Жим гантелей вгору сидячи на лаві з вертикальною спинкою" loading="lazy" data-fallback />
             </div>
             <div class="card__body">
-              <div class="card__meta"><span class="meta-tag">Гантелі</span><span class="meta-tag">Базова</span></div>
               <h3 class="card__title">Жим гантелей сидячи</h3>
-              <p class="card__desc">Вертикальний жим із фіксованою спиною для симетричного розвитку переднього та середнього пучків дельт.</p>
-              <div class="card__footer"><span>Переглянути техніку</span><span aria-hidden="true">→</span></div>
+              <p class="card__sub">Передня та середня дельти, трицепс</p>
+              <div class="card__footer">
+                <span class="card__equip">Гантелі, лава</span>
+                <span class="card__action" aria-hidden="true">Деталі →</span>
+              </div>
             </div>
           </article>
 
-          <article class="card card--interactive" tabindex="0" role="button" data-open-exercise="barbell-squat" aria-label="Детальніше: Присідання">
+          <article class="card card--interactive card--exercise" tabindex="0" role="button" data-open-exercise="barbell-squat" aria-label="Детальніше: Присідання">
             <div class="card__media">
               <span class="card__badge">Ноги</span>
               <div class="card__media-fallback"><span>Ноги</span></div>
-              <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=700&q=80" alt="Присідання зі штангою" loading="lazy" data-fallback />
+              <img src="assets/images/exercises/barbell-squat.svg" alt="Присідання зі штангою на плечах до паралелі стегон із підлогою" loading="lazy" data-fallback />
             </div>
             <div class="card__body">
-              <div class="card__meta"><span class="meta-tag">Штанга</span><span class="meta-tag">Базова</span></div>
               <h3 class="card__title">Присідання</h3>
-              <p class="card__desc">Багатосуглобова вправа для квадрицепсів, сідничних м’язів та м’язів-стабілізаторів корпуса.</p>
-              <div class="card__footer"><span>Переглянути техніку</span><span aria-hidden="true">→</span></div>
+              <p class="card__sub">Квадрицепси, сідниці, м’язи кора</p>
+              <div class="card__footer">
+                <span class="card__equip">Штанга, стійки</span>
+                <span class="card__action" aria-hidden="true">Деталі →</span>
+              </div>
             </div>
           </article>
         </div>
@@ -283,58 +258,37 @@
     </section>
 
     <!-- 4. Fundamentals of Training Section -->
-    <section class="section section--secondary">
+    <section class="section section--secondary section--no-border">
       <div class="container">
         <div class="section-header section-header--split">
           <div>
             <span class="eyebrow">ФУНДАМЕНТ</span>
             <h2>Чотири принципи розумного тренінгу</h2>
-            <p class="section-header__lead">
-              Незалежно від обраної програми, довгостроковий результат у тренажерному залі ґрунтується на незмінних фізіологічних правилах.
-            </p>
           </div>
           <a href="glossary.html" class="link-arrow">Фітнес-словник <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="grid-4">
           <article class="principle-card">
-            <span class="principle-card__num">ПРИНЦИП 01</span>
+            <span class="principle-card__num">01 // ТЕХНІКА</span>
             <h3 class="card__title">Техніка передусім</h3>
-            <p class="card__desc">Контрольована траєкторія, повна амплітуда руху та стабільність суглобів завжди важливіші за цифру на штанзі.</p>
+            <p class="card__desc">Контрольована траєкторія, повна амплітуда руху та стабільність суглобів завжди важливіші за вагу на штанзі.</p>
           </article>
           <article class="principle-card">
-            <span class="principle-card__num">ПРИНЦИП 02</span>
+            <span class="principle-card__num">02 // ПРОГРЕСІЯ</span>
             <h3 class="card__title">Прогресивне навантаження</h3>
             <p class="card__desc">Поступове збільшення робочої ваги, кількості чистих повторень або якості контролю стимулює адаптацію м’язів.</p>
           </article>
           <article class="principle-card">
-            <span class="principle-card__num">ПРИНЦИП 03</span>
-            <h3 class="card__title">Регулярність і система</h3>
-            <p class="card__desc">Помірні, але стабільні тренування 3–4 рази на тиждень ефективніші за рідкісні виснажливі сесії до повної відмови.</p>
+            <span class="principle-card__num">03 // СИСТЕМА</span>
+            <h3 class="card__title">Регулярність</h3>
+            <p class="card__desc">Помірні, але стабільні тренування 3–4 рази на тиждень ефективніші за рідкісні виснажливі сесії до відмови.</p>
           </article>
           <article class="principle-card">
-            <span class="principle-card__num">ПРИНЦИП 04</span>
+            <span class="principle-card__num">04 // ВІДПОЧИНОК</span>
             <h3 class="card__title">Повноцінне відновлення</h3>
             <p class="card__desc">М’язи зміцнюються під час відпочинку між сесіями за умови достатнього сну та збалансованого раціону.</p>
           </article>
-        </div>
-      </div>
-    </section>
-    <!-- 5. Call to Action Section -->
-    <section class="section section--no-border">
-      <div class="container">
-        <div class="cta-banner">
-          <div>
-            <span class="eyebrow">ПЕРЕХОДЬ ДО ПРАКТИКИ</span>
-            <h2>Готові розібрати техніку кожної вправи?</h2>
-            <p class="section-header__lead" style="margin-top: 0.65rem;">
-              Перегляньте повний каталог базових та ізоляційних рухів із фільтрацією за групами м’язів та пошуком за обладнанням.
-            </p>
-          </div>
-          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="exercises.html" class="btn btn--primary">Відкрити каталог вправ</a>
-            <a href="glossary.html" class="btn btn--secondary">Словник термінів</a>
-          </div>
         </div>
       </div>
     </section>
